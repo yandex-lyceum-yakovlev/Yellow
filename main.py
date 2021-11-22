@@ -25,7 +25,7 @@ class MyWidget(QWidget):
         d = randint(3, 200)
         heigh, width = randint(0, 300 - d), randint(0, 300 - d)
 
-        qp.setPen(QPen(QColor(255, 255, 0), 4))
+        qp.setPen(QPen(QColor(randint(0, 255), randint(0, 255), randint(0, 255)), 4))
 
         qp.drawEllipse(heigh, width, d, d)
 
